@@ -4,19 +4,19 @@
 **/
 
 //Funciones para convertir px a em y rem
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "components/functions";
-
 // Variables globales (puede sobreescribirlas antes de importar ED grid)
 // No las sobreescriba aquí, sino desde su proyecto.
-  $cssCore    : true  !default; //Compila todo el css (no recomendado si se trabaja con sass).
+  $cssCore    : false  !default; //Compila todo el css (no recomendado si se trabaja con sass).
   $cssHelpers : true  !default; //Ayudas extras para el layout (para alinear elementos, limpiar los floats, controlar el padding, etc...) Se recomienda activarlo.
   $buttons    : true  !default;
   $devMode    : false !default; //Ayuda visual que nos permite ver en el navegador breakpoints, el tamaño de los elementos, el area disponible etc...
 
 // Selectores (clases) para flex-container y flex-item
 
-  $container : ed-container !default; // Permite modificar el nombre de las clases usadas como contenedor e item.
-  $item      : ed-item !default;
+  $container : container !default; // Permite modificar el nombre de las clases usadas como contenedor e item.
+  $item      : item !default;
 
 // Ancho máximo para los contenedores
   $max-width : 1200px !default;
@@ -35,6 +35,13 @@
 // Fracciones para calcular anchos de los items
   $fractions : 3 6 !default;
 
+//Colors
+  $azul: #5977B4;
+  $azul2: #65BFF3;
+  $azul3: #EAEAF1;
+  $gris: #A7B1B7;
+  $gris2: #B7B7CB;
+
 // Importar componentes
 @import "components/base";            // estilos base
 @import "components/media-queries";   // mixins from(), to(), fromTo()
@@ -52,3 +59,4 @@
 @import "components/css-helpers";     // ayudas en css (por medio de clases)
 @import "components/grid-v3";         // ayudas en css (por medio de clases)
 @import "components/layout";          // l-block y l-section
+@import "components/easy/top";

@@ -4,9 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=2.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <title>easyApp</title>
 </head>
 <body>
+  <header id="top">
+    <div class="logo">
+      <img src="/assets/img/easylogo-300x300.png" alt="easyApp" class="logo__img">
+    </div>
+    <div class="toggle-menu">m</div>
+    <div class="search">
+      <input type="text" class="search__input" placeholder="Busca clases, amigos, profesores y más...">
+    </div>
+    <div class="tools">
+      <!-- <div class="tools__notifications">
+        <div class="tools__notifications__number"><p>2</p></div>
+      </div> -->
+      <div class="tools__profile">
+        <img src="/assets/img/user.jpg" alt="" class="tools__profile__img">
+      </div>
+    </div>
+  </header>
 
+  <!-- Cuerpo de la página -->
+  <main id="main">
+    <!-- menu izquierdo -->
+    <aside class="menubar">
+      <ul class="main-menu">
+        <li class="main-menu__list"><a href="#" class="main-menu__link">Inicio</a></li>
+        <li class="main-menu__list"><a href="#" class="main-menu__link">Clases</a></li>
+        <li class="main-menu__list"><a href="#" class="main-menu__link">Calendario</a></li>
+        <li class="main-menu__list"><a href="#" class="main-menu__link">Inbox</a></li>
+        <li class="main-menu__list"><a href="#" class="main-menu__link">Trabajos</a></li>
+      </ul>
+      <hr>
+      <ul class="options-menu">
+        <li class="options-menu__list"><a href="#" class="options-menu__link">Settings</a></li>
+        <li class="options-menu__list"><a href="#" class="options-menu__link">Ayuda</a></li>
+      </ul>
+      <hr>
+      <!-- Loader de semanas -->
+      <div class="loader-week">
+        <p>Semana 4, Tiempo de prácticas.</p>
+      </div>
+    </aside>
+    <!-- cuerpo de la pagina -->
+    <section class="center">
+      <article class="post">
+        <div class="post__head">
+          <div class="post__head__profile"></div>
+          <div class="post__head__username"><p class="post_head___username__name">Daniel López <span>- Curso Name</span></p></div>
+          <div class="post__head__time"><p class="post__head__time__date">1d</p></div>
+        </div>
+        <div class="post__body">
+          <div class="post__body__content"><p class="post__body__content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestias laborum, voluptates assumenda alias distinctio laboriosam quos unde voluptatem reiciendis totam facere quae facilis nihil quidem dicta non mollitia accusamus.</p></div>
+        </div>
+      </article>
+      <article class="post">
+        <div class="post__head">
+          <div class="post__head__profile"></div>
+          <div class="post__head__username"><p class="post__head___username__name">Daniel López <span>- Curso Name</span></p></div>
+          <div class="post__head__time"><p class="post__head__time__date">1d</p></div>
+        </div>
+        <div class="post__body">
+          <div class="post__body__content"><p class="post__body__content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestias laborum, voluptates assumenda alias distinctio laboriosam quos unde voluptatem reiciendis totam facere quae facilis nihil quidem dicta non mollitia accusamus.</p></div>
+        </div>
+        <div class="post__footer">
+          <div class="post__footer__comment">
+            <div class="post__footer__comment__profile"></div>
+            <div class="post__footer__comment__username"><p class="post__footer__comment___username__name">Daniel López</p></div>
+            <div class="post__footer__comment__comment"><p class="post__footer__comment__comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptatum dolor ad.</p></div>
+            <div class="post__footer__comment__time"><p class="post__footer__comment__time__date">2d</p></div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Sidebar derecho -->
+    <aside class="sidebar">
+      <div class="ad">
+        <div class="ad__head"><img src="" alt="" class="ad__head__img"></div>
+        <div class="ad__body">
+          <div class="ad__body__title"><h4>Title of Ad</h4></div>
+          <div class="ad__body__content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nobis necessitatibus laboriosam in. Consequuntur itaque facilis recusandae nobis asperiores dicta voluptates veniam assumenda, unde adipisci dolorum, necessitatibus quis, corporis eos.</p></div>
+        </div>
+        <div class="ad__footer">
+          <div class="ad__footer__date"><p>13 Jul 2018 - Este día</p></div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <script src="/assets/js/ed-grid.js "></script>
 </body>
 </html>
