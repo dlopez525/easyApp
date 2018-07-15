@@ -72,14 +72,6 @@
         color: $gris;
       }
     }
-
-    &__options {
-      @include edItem(50,50,50);
-      @include mainEnd;
-      @include crossCenter;
-
-      color: $gris3;
-    }
   }
 
   &__body {
@@ -99,7 +91,7 @@
     }
 
     &__subtitle {
-
+      cursor: default;
     }
 
     &__title {
