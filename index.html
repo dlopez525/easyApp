@@ -12,7 +12,7 @@
     <div class="logo">
       <img src="/assets/img/easylogo-300x300.png" alt="easyApp" class="logo__img">
     </div>
-    <div class="toggle-menu">m</div>
+    <div class="toggle-menu" id="toggle-menu">m</div>
     <div class="search">
       <input type="text" class="search__input" placeholder="Busca clases, amigos, profesores y más...">
     </div>
@@ -29,9 +29,9 @@
   <!-- Cuerpo de la página -->
   <main id="main">
     <!-- menu izquierdo -->
-    <aside class="menubar">
+    <aside class="menubar showMenuBar" id="menubar">
       <ul class="main-menu">
-        <li class="main-menu__list"><a href="#" class="main-menu__link">Inicio</a></li>
+        <li class="main-menu__list active"><a href="#" class="main-menu__link">Inicio</a></li>
         <li class="main-menu__list"><a href="#" class="main-menu__link">Clases</a></li>
         <li class="main-menu__list"><a href="#" class="main-menu__link">Calendario</a></li>
         <li class="main-menu__list"><a href="#" class="main-menu__link">Inbox</a></li>
@@ -49,7 +49,7 @@
       </div>
     </aside>
     <!-- cuerpo de la pagina -->
-    <section class="center">
+    <section class="body">
       <article class="post">
         <div class="post__head">
           <div class="post__head__profile"></div>
@@ -93,6 +93,6 @@
       </div>
     </aside>
   </main>
-  <script src="/assets/js/ed-grid.js "></script>
+  <script src="/assets/js/scripts.js "></script>
 </body>
 </html>

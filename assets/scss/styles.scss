@@ -39,8 +39,9 @@
   $azul: #5977B4;
   $azul2: #65BFF3;
   $azul3: #EAEAF1;
-  $gris: #A7B1B7;
+  $gris: #9EA7B5;
   $gris2: #B7B7CB;
+  $bg: #F9FAFC;
 
 // Importar componentes
 @import "components/base";            // estilos base
@@ -51,7 +52,7 @@
 @import "components/grid";            // mixin grid()
 @import "components/visibility";      // mixins para visibilidad
 @import "components/video";           // video RWD
-@import "components/ed-menu";         // estilos para menus
+//@import "components/ed-menu";         // estilos para menus
 @import "components/flexbox";         // utilidades con flexbox
 @import "components/offset";          // offsets
 @import "components/buttons";         // mixin button()
@@ -60,3 +61,4 @@
 @import "components/grid-v3";         // ayudas en css (por medio de clases)
 @import "components/layout";          // l-block y l-section
 @import "components/easy/top";
+@import "components/easy/main";
