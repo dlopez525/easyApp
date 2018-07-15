@@ -4,7 +4,7 @@
 **/
 
 //Funciones para convertir px a em y rem
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import "components/functions";
 // Variables globales (puede sobreescribirlas antes de importar ED grid)
 // No las sobreescriba aquí, sino desde su proyecto.
@@ -35,12 +35,19 @@
 // Fracciones para calcular anchos de los items
   $fractions : 3 6 !default;
 
+//Fonts
+  $light: 300;
+  $regular: 400;
+  $semibold: 600;
+  $bold: 700;
+
 //Colors
   $azul: #5977B4;
   $azul2: #65BFF3;
   $azul3: #EAEAF1;
   $gris: #9EA7B5;
   $gris2: #B7B7CB;
+  $gris3: #5B606D;
   $bg: #F9FAFC;
 
 // Importar componentes
@@ -62,3 +69,6 @@
 @import "components/layout";          // l-block y l-section
 @import "components/easy/top";
 @import "components/easy/main";
+@import "components/easy/menubar";
+@import "components/easy/body";
+@import "components/easy/sidebar";

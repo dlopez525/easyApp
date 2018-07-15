@@ -1,0 +1,83 @@
+.menubar {
+  @include edItem(80,40,20);
+
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-right: 1px solid lighten($gris2, 13%);
+  color: $gris3;
+  transition: .2s all;
+
+  hr {
+    color: $bg;
+  }
+
+  @include to(l) {
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    height: calc(100vh - 64px);
+    top: em(71px);
+    box-shadow: 0px 0px 3px $gris;
+    left: -100%;
+    overflow-y: scroll;
+  }
+
+  &.showMenuBar {
+    left: 0;
+  }
+}
+
+.main-menu,
+.options-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu {
+
+  &__list {
+    line-height: 3em;
+    padding-left: 15px;
+    margin-bottom: .5em;
+    transition: 0.2s all;
+    margin-bottom: 1em;
+  }
+
+  &__list:hover,
+  &__list.active {
+    background: $azul;
+    border-radius: 2px;
+  }
+
+  &__list.active &__link {
+    color: #fff;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    color: $gris3;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.options-menu {
+
+  &__list {
+    line-height: 3em;;
+  }
+
+  &__link {
+    color: $gris3;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+    color: darken($gris3, 20%);
+  }
+}
