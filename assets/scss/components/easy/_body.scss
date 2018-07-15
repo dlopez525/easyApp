@@ -83,9 +83,66 @@
   }
 
   &__footer {
-    padding-top: $gutter;
-    padding-bottom: 30px;
+    // padding-top: $gutter;
+    // padding-bottom: 30px;
     background: lighten($azul2, 30%);
+
+    &__addcomment {
+      @include edContainer;
+      background: $bg;
+      padding-top: $gutter;
+      padding-bottom: $gutter;
+
+      &__box {
+        @include edItem(80,80,85);
+        @include padding(0);
+
+        &__input {
+          border: none;
+          appearance: none;
+          outline: none;
+          width: 100%;
+          background: none;
+          padding-left: $gutter;
+          padding-top: 10px;
+          padding-right: $gutter;
+          padding-bottom: 10px;
+          line-height: 1.5em;
+          border-radius: 2px;
+          color: $gris3;
+        }
+
+        &__input:focus {
+          background: darken($bg, 10%);
+        }
+      }
+
+      &__send {
+        @include edItem(20,20,15);
+        @include padding(0);
+
+        &__button {
+          border: none;
+          appearance: none;
+          outline: none;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 1.5em;
+          background: darken($azul2, 10%);
+          color: #fff;
+          transition: .3s all;
+        }
+
+        &__button:hover {
+          background: darken($azul2, 20%);
+        }
+
+        &__button:active {
+          background: darken($azul2, 30%);
+        }
+      }
+    }
 
     &__comment {
       @include edContainer;
