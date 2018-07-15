@@ -1,3 +1,5 @@
 haburguer menu
 search - lupa
 enviar - comentario
+plus - +
+opcion - tres puntos verticales

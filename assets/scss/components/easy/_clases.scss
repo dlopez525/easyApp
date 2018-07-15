@@ -1,0 +1,110 @@
+.courses {
+  @include edContainer;
+  @include grid('.course',1 2 2 15);
+
+  &__head {
+    @include edItem(100,100,100);
+    @include edContainer;
+
+    &__title {
+      @include edItem(80,80,80);
+
+      h4 {
+        width: 100%;
+      }
+    }
+
+    &__add {
+      @include edItem(20,20,20);
+      @include mainEnd;
+    }
+  }
+}
+
+.course {
+  background: #fff;
+  border: 1px solid darken($bg, 10%);
+  border-radius: 2px;
+  padding-top: $gutter;
+  padding-bottom: $gutter;
+  transition: .3s all;
+
+  &:hover {
+    background: $purple;
+  }
+
+  &:nth-child(3n+1) + &:hover {
+    background: $pink;
+  }
+
+  &:nth-child(3n+2) + &:hover {
+    background: $yellow;
+  }
+
+  &:hover &__head__letter__letter {
+    border: 1px solid #fff;
+  }
+
+  &:hover &__head__letter__letter,
+  &:hover &__head__options,
+  &:hover &__body__subtitle__link,
+  &:hover &__body__title__link {
+    color: #fff;
+  }
+
+  &__head {
+    @include edContainer;
+    @include crossStart;
+
+    &__letter {
+      @include edItem(50,50,50);
+      @include mainStart;
+
+      &__letter {
+        @include circle;
+        width: em(40px);
+        height: em(40px);
+        line-height: em(40px);
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: $light;
+        border: 1px solid $gris;
+        color: $gris;
+      }
+    }
+
+    &__options {
+      @include edItem(50,50,50);
+      @include mainEnd;
+      @include crossCenter;
+
+      color: $gris3;
+    }
+  }
+
+  &__body {
+    @include edContainer;
+
+    margin-top: $gutter;
+
+    &__subtitle,
+    &__title {
+      @include edItem(100,100,100);
+      @include crossEnd;
+
+      &__link {
+        margin: 0;
+        color: #000;
+      }
+    }
+
+    &__subtitle {
+
+    }
+
+    &__title {
+      font-weight: $semibold;
+      font-size: 1.2em;
+    }
+  }
+}

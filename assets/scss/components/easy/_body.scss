@@ -4,6 +4,7 @@
   @include offset(0,0,20);
 
   padding-top: 1.5em;
+  padding-bottom: 2em;
 
   @include to(l) {
     @include padding(1);

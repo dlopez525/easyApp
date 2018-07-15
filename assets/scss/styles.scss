@@ -49,6 +49,9 @@
   $gris2: #B7B7CB;
   $gris3: #5B606D;
   $bg: #F9FAFC;
+  $purple: #A878D3;
+  $yellow: #F5D592;
+  $pink: #DD687F;
 
 // Importar componentes
 @import "components/base";            // estilos base
@@ -72,3 +75,4 @@
 @import "components/easy/menubar";
 @import "components/easy/body";
 @import "components/easy/sidebar";
+@import "components/easy/clases";
