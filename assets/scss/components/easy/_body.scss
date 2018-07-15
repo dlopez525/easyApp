@@ -9,6 +9,14 @@
   @include to(l) {
     @include padding(1);
   }
+
+  &.bodyTwo {
+    @include edItem(100,100,80);
+    @include offset(0,0,20);
+    @include padding(0);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .post {

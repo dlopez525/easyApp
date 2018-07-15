@@ -1,0 +1,50 @@
+.tasks {
+  @include edContainer;
+
+  height: calc(100vh - 64px);
+  background: #fff;
+}
+
+.tasks-list,
+.tasks-details {
+  overflow-y: auto;
+  height: calc(100vh - 64px);
+}
+
+.tasks-list {
+  @include edItem(100,20,35);
+  @include padding(0);
+
+  &__course {
+    height: 4em;
+    line-height: 4em;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    position: relative;
+    border-bottom: 1px solid lighten($gris2, 13%);
+
+    h3 {
+      margin: 0;
+      font-weight: $semibold;
+      position: relative;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: $purple;
+    }
+  }
+}
+
+.tasks-details {
+  @include edItem(100,80,65);
+
+  background: red;
+}
