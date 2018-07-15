@@ -1,6 +1,7 @@
 .body {
   @include edItem(100,100,55);
   @include padding(3);
+  @include offset(0,0,20);
 
   padding-top: 1.5em;
 
