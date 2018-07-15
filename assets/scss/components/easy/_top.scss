@@ -12,13 +12,9 @@
   position: fixed;
   width: 100%;
   z-index: 99;
-  // box-shadow: 0px 0px 5px $gris;
   top: 0;
 
   @include to(l) {
-    // position: fixed;
-    // width: 100%;
-    // z-index: 99;
     box-shadow: 0px 0px 5px $gris;
   }
 
@@ -68,7 +64,6 @@
   }
 
   &__input:focus {
-    // border-bottom: 1px solid $gris;
     background: darken($bg, 3%);
   }
 }
@@ -84,5 +79,63 @@
     overflow: hidden;
     width: em(53px);
     height: em(53px);
+    cursor: pointer;
+  }
+
+  &__options {
+    width: 20%;
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    top: em(70px);
+    padding-left: $gutter;
+    padding-top: $gutter;
+    padding-right: $gutter;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 5px $gris2;
+    transition: .3s all;
+
+    display: none;
+
+    @include to(l) {
+      width: 25%;
+    }
+
+    @include to(m) {
+      width: 55%;
+    }
+
+    &__menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &__list {
+        line-height: 2em;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border-radius: 2px;
+      }
+
+      &__list:hover {
+        background: lighten($gris, 30%);
+      }
+
+      &__link {
+        color: darken($gris2, 15%);
+        font-size: .9em;
+        display: block;
+      }
+
+      &__link:hover {
+        text-decoration: none;
+        color: $azul2;
+      }
+    }
+
+    &.showToolsOptions {
+      display: block;
+    }
   }
 }
