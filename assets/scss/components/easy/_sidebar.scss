@@ -1,3 +1,61 @@
 .sidebar {
   @include edItem(100,100,25);
+
+  padding-top: 1.5em;
+}
+
+.ad {
+  @include edContainer;
+  max-width: 400px;
+  margin-bottom: 1.5em;
+  background: #fff;
+  border: 1px solid darken($bg, 10%);
+  border-radius: 3px;
+  overflow: hidden;
+
+  &__head {
+    @include edItem(100,100,100);
+    @include padding(0);
+  }
+
+  &__body {
+    @include edItem(100,100,100);
+
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    color: $gris3;
+
+    &__title {
+      font-weight: $semibold;
+      font-size: .95em;
+
+      h4 {
+        margin: 0;
+      }
+    }
+
+    &__content {
+      font-size: .85em;
+      padding-top: $gutter;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &__footer {
+    @include edItem(100,100,100);
+
+    &__date {
+      font-weight: $light;
+      color: darken($gris, 5%);
+      font-size: .85em;
+      padding-bottom: $gutter;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
 }

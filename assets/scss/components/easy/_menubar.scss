@@ -13,10 +13,6 @@
   color: $gris3;
   transition: .2s all;
 
-  hr {
-    color: $bg;
-  }
-
   @include to(l) {
     box-shadow: 0px 0px 3px $gris;
     left: -100%;
@@ -33,6 +29,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  border-bottom: 1px solid darken($bg, 10%);
 }
 
 .main-menu {
