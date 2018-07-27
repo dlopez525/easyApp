@@ -3,3 +3,5 @@ search - lupa
 enviar - comentario
 plus - +
 opcion - tres puntos verticales
+check - tareas
+down - cursos titulo movil

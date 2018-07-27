@@ -11,3 +11,10 @@ var toggleOptions = document.getElementById('toggle-tools'),
 toggleOptions.addEventListener('click', function() {
     div.classList.toggle('showToolsOptions');
 });
+
+var toggleTasks = document.getElementById('tasks-list__course__toggle'),
+    tasks = document.getElementById('tasks-list__task');
+
+toggleTasks.addEventListener('click', function() {
+    tasks.classList.toggle('showTask');
+});
