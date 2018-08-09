@@ -3,7 +3,6 @@
   EDgrid es una librería CSS para construir layouts con Responsive Web Design
   Importe este archivo en su proyecto para empezar a usarlo
 **/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 *,
 *:before,
 *:after {
@@ -29,7 +28,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.container, #top, #main, .post__head, .post__body, .post__footer__addcomment, .post__footer__comment, .ad, .courses, .courses__head, .course__head, .course__body, .tasks, .tasks-list__course, .tasks-list__task__assignment {
+.container, #top, #main, .post__head, .post__body, .post__footer__addcomment, .post__footer__comment, .ad, .courses, .courses__head, .course__head, .course__body, .tasks, .tasks-list__course, .tasks-list__task__assignment, .tasks-details__top__options, .tasks-details__content__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +40,7 @@ a:hover {
   width: 100%;
 }
 
-.item, .toggle-menu, .logo, .search, .tools, .menubar, .body, .body.bodyTwo, .post__head__profile, .post__head__username, .post__head__date, .post__body__content, .post__footer__addcomment__box, .post__footer__addcomment__send, .post__footer__comment__profile, .post__footer__comment__username, .post__footer__comment__content, .post__footer__comment__date, .sidebar, .ad__head, .ad__body, .ad__footer, .courses__head, .courses__head__title, .courses__head__add, .course__head__letter, .course__body__subtitle, .course__body__title, .tasks-list, .tasks-list__course__title, .tasks-list__course__toggle, .tasks-list__task__assignment__status, .tasks-list__task__assignment__info, .tasks-list__task__assignment__profile, .tasks-details {
+.item, .toggle-menu, .logo, .search, .tools, .menubar, .body, .body.bodyTwo, .post__head__profile, .post__head__username, .post__head__date, .post__body__content, .post__footer__addcomment__box, .post__footer__addcomment__send, .post__footer__comment__profile, .post__footer__comment__username, .post__footer__comment__content, .post__footer__comment__date, .sidebar, .ad__head, .ad__body, .ad__footer, .courses__head, .courses__head__title, .courses__head__add, .course__head__letter, .course__body__subtitle, .course__body__title, .tasks-list, .tasks-list__course__title, .tasks-list__course__toggle, .tasks-list__task__assignment__status, .tasks-list__task__assignment__info, .tasks-list__task__assignment__profile, .tasks-details, .tasks-details__content__header__status, .tasks-details__content__header__title {
   margin: 0;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2627,7 +2626,8 @@ body {
 
 .tasks-details {
   width: 100%;
-  background: red;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 @media screen and (min-width: 640px) {
@@ -2641,4 +2641,135 @@ body {
     position: relative;
     top: -13.8em;
   }
+}
+
+.tasks-details__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 4.5em;
+  line-height: 4.5em;
+  border-bottom: 1px solid #dddde7;
+  background: #fff;
+}
+
+@media screen and (max-width: 639px) {
+  .tasks-details__top {
+    position: relative;
+    top: 8em;
+  }
+}
+
+.tasks-details__top__options__option {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 1rem;
+  background: #F9FAFC;
+  text-align: center;
+}
+
+.tasks-details__top__options__option:hover {
+  background: #e1e6f0;
+}
+
+.tasks-details__top__options__option a {
+  display: block;
+  color: #5977B4;
+}
+
+.tasks-details__top__options__option a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 639px) {
+  .tasks-details__content {
+    position: relative;
+    top: 8em;
+    display: block;
+  }
+}
+
+.tasks-details__content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.tasks-details__content__header__status {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 640px) {
+  .tasks-details__content__header__status {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tasks-details__content__header__status {
+    width: 15%;
+  }
+}
+
+.tasks-details__content__header__status__font {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid #5B606D;
+  color: #5B606D;
+}
+
+.tasks-details__content__header__title {
+  width: 75%;
+}
+
+@media screen and (min-width: 640px) {
+  .tasks-details__content__header__title {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tasks-details__content__header__title {
+    width: 85%;
+  }
+}
+
+.tasks-details__content__header__title p {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  color: #9EA7B5;
+}
+
+.tasks-details__content.made .tasks-details__content__header__status__font {
+  background: #5977B4;
+  border: none;
+  color: #fff;
 }

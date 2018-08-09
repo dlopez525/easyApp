@@ -174,11 +174,104 @@
 
 .tasks-details {
   @include edItem(100,65,65);
+  @include padding(0);
 
   @include to(m) {
     position: relative;
     top: -13.8em;
     // z-index: 9;
   }
-  background: red;
+
+  &__top {
+    // @include edContainer;
+    @include crossCenter;
+
+    height: 4.5em;
+    line-height: 4.5em;
+    border-bottom: 1px solid lighten($gris2, 13%);
+    background: #fff;
+
+    @include to(m) {
+      position: relative;
+      top: 8em;
+    }
+
+    &__options {
+      @include edContainer;
+
+      &__option {
+        @include circle;
+
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: $gutter;
+        background: $bg;
+        text-align: center;
+
+        &:hover {
+          background: darken($bg, 7%);
+        }
+
+        a {
+          display: block;
+          color: $azul;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include to(m) {
+      position: relative;
+      top: 8em;
+      display: block;
+    }
+
+    &__header {
+      @include edContainer;
+      @include crossCenter;
+
+      &__status {
+        @include edItem(25,20,15);
+        @include mainCenter;
+
+        &__font {
+          @include circle;
+
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
+          text-align: center;
+          border: 1px solid $gris3;
+          color: $gris3;
+        }
+      }
+
+      &__title {
+        @include edItem(75,80,85);
+
+        p {
+          margin: 0;
+          padding: 0;
+          font-weight: $light;
+          color: $gris;
+        }
+      }
+    }
+
+    &.made {
+      & .tasks-details__content__header__status__font {
+        background: $azul;
+        border: none;
+        color: #fff;
+      }
+    }
+  }
+
+
 }

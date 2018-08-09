@@ -5,3 +5,7 @@ plus - +
 opcion - tres puntos verticales
 check - tareas
 down - cursos titulo movil
+user line - tarea agregar compañero
+check line - realizar tarea
+clip line - adjuntar
+reloj line - fecha tarea
