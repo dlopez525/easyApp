@@ -1,0 +1,143 @@
+.login {
+  background: $bg;
+}
+
+.login__logo {
+  @include mainCenter;
+  margin-top: 2em;
+
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.login__data {
+  @include edContainer;
+  @include mainCenter;
+
+  margin-top: 2em;
+
+  &__form {
+    @include edContainer;
+    @include edItem(90,70,40);
+    @include padding(3);
+
+    @include to(m) {
+      @include padding(2);
+    }
+
+    position: relative;
+    // padding-top: 2em;
+    background: #fff;
+    box-shadow: 0px 0px 20px $gris;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 8px;
+      background: $azul;
+    }
+
+    &__title {
+      color: $azul2;
+      text-align: center;
+      font-weight: $semibold;
+      margin-bottom: 2em;
+      width: 100%;
+    }
+
+    &__input-form {
+      margin-bottom: 1em;
+      width: 100%;
+      position: relative;
+
+      span {
+        position: absolute;
+        line-height: 2.5em;
+        display: block;
+        width: 40px;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        color: $gris2;
+      }
+
+      input {
+        width: 100%;
+        padding-left: 55px;
+        padding-right: $gutter;
+
+        line-height: 2.5em;
+        border: 1px solid lighten($gris2, 13%);
+        color: $gris3;
+      }
+    }
+
+    &__options {
+      @include edContainer;
+      @include crossCenter;
+
+      &__option {
+        @include edItem(100,50,50);
+
+        @include to(m) {
+          margin-bottom: .7em;
+        }
+
+        padding: 0;
+        font-size: .9em;
+        font-weight: $light;
+        line-height: 2;
+        margin-bottom: 1em;
+
+        a {
+          color: $azul;
+        }
+      }
+
+
+    }
+
+    &__submit-form {
+      @include edContainer;
+
+      input[type="submit"] {
+        width: 100%;
+        line-height: 2.5;
+        border: none;
+        background: $azul;
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 1em;
+        cursor: pointer;
+      }
+    }
+
+    &__footer {
+      @include edContainer;
+      @include crossEnd;
+      @include mainCenter;
+
+      margin-top: 1.5em;
+      line-height: 3em;
+      font-size: .9em;
+      color: $gris3;
+
+      p {
+        margin: 0;
+        padding: 0;
+
+        a {
+          color: $azul;
+        }
+      }
+    }
+  }
+}

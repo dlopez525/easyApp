@@ -4,7 +4,7 @@
 **/
 
 //Funciones para convertir px a em y rem
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import "components/functions";
 // Variables globales (puede sobreescribirlas antes de importar ED grid)
 // No las sobreescriba aquí, sino desde su proyecto.
@@ -80,3 +80,4 @@
 @import "components/easy/sidebar";
 @import "components/easy/clases";
 @import "components/easy/course";
+@import "components/easy/login";

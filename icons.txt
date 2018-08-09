@@ -9,3 +9,5 @@ user line - tarea agregar compañero
 check line - realizar tarea
 clip line - adjuntar
 reloj line - fecha tarea
+user - login
+block - login
